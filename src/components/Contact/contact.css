@@ -1,0 +1,285 @@
+#contactPage
+{
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactPageTitle
+{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+
+}
+
+.clientDesc
+{
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.clientImgs
+{
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.clientImg
+{
+    object-fit: cover;
+    width: 25%;
+    min-width: 9rem;
+    margin: auto;
+    padding: 0.25rem;
+
+}
+
+#clients
+{
+    padding: 2rem;
+}
+
+.contactDesc
+{
+    padding: 1rem;
+    font-size: medium;
+    font-weight: 300;
+}
+
+.contactForm
+{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: 60rem;
+}
+
+
+.name, .email, .msg
+{
+    font-size: medium;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    background: rgba(40, 40, 40, 0.634);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.submitBtn
+{
+    background: white;
+    border: none;
+    cursor:pointer;
+    border-radius: 0.5rem;
+    margin: 2rem;
+    padding: 0.75rem 3.5rem;
+    transition: 0.3s ease;
+}
+
+.submitBtn:hover
+{
+    background-color: rgba(255, 255, 255, 0.364);
+}
+
+.links
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.link
+{
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin: 0 1rem;
+}
+
+.project-page
+{
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.projectPageTitle
+{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.timeline
+{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.timeline::after
+{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 6s linear forwards;
+}
+
+@keyframes moveline {
+    0%{
+        height: 0;
+    }
+
+    100%{
+        height: 100%;
+    }
+    
+}
+.container
+{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+
+@keyframes movedown {
+    0%
+    {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0px);
+    } 
+}
+
+.container:nth-child(1)
+{
+    animation-delay: 0s;
+}
+.container:nth-child(2)
+{
+    animation-delay: 1s;
+}
+.container:nth-child(3)
+{
+    animation-delay: 2s;
+}
+.container:nth-child(4)
+{
+    animation-delay: 3s;
+}
+.container:nth-child(5)
+{
+    animation-delay: 4s;
+}
+.container:nth-child(6)
+{
+    animation-delay: 5s;
+}
+
+.text-box
+{
+    padding: 20px 30px;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+    background: #ffffff53;
+}
+
+.left-container
+{
+    left: 0;
+}
+
+.right-container
+{
+    left: 50%;
+}
+
+.container img{
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 0;
+}
+
+.right-container img
+{
+    left: -20px;
+}
+
+.text-box h2
+{
+    font-weight: 600;
+}
+
+.text-box small
+{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.left-container-arrow
+{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid rgb(172, 255, 47);
+    right: -15px;
+}
+
+.right-container-arrow
+{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid rgb(172, 255, 47);
+    left: -15px;
+}
+

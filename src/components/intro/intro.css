@@ -1,0 +1,97 @@
+#intro
+{
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: visible;
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    
+}
+
+.bg
+{
+    position: absolute;
+    top: -4rem;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 100vh;
+}
+
+.introContent
+{
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+
+}
+
+.hello
+{
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+.introName
+{
+    color: rgb(0, 225, 0);
+}
+
+.introPara
+{
+    font-size: medium;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.websiteButton {
+    margin-top: 35px;
+    display: inline-block;
+    padding: 10px 20px; 
+    font-size: 16px; 
+    background-color: #ffffff; 
+    color: #000000; 
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 200px;
+    height: 70px;
+    transition: 0.3s ease;
+}
+
+.websiteButton img {
+    vertical-align: middle; 
+    margin-right: 5px; 
+}
+
+.websiteButton:hover {
+    background-color: greenyellow; 
+    border-radius: 20px;
+
+}
+
+@media screen and (max-width:840px) 
+{
+    .bg
+    {
+        right: -20vw;
+    }  
+    .introContent
+    {
+        font-size: 10vw;
+        right: -20vw;
+    }
+    .hello
+    {
+        font-size: 4.5vw;
+    }
+}
